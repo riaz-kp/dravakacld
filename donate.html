@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{TITLE}}</title>
-<meta name="description" content="{{DESC}}">
+<title>Donate — the Dravaka Foundation</title>
+<meta name="description" content="Fund beach clean-ups, mangrove nurseries, coral regeneration and coastal education. One-off or monthly, with a published breakdown of where every rupee goes.">
 <meta name="theme-color" content="#062733">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <meta property="og:site_name" content="Dravaka Adventure Club">
-<meta property="og:title" content="{{TITLE}}">
-<meta property="og:description" content="{{DESC}}">
+<meta property="og:title" content="Donate — the Dravaka Foundation">
+<meta property="og:description" content="Fund beach clean-ups, mangrove nurseries, coral regeneration and coastal education. One-off or monthly, with a published breakdown of where every rupee goes.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/img/reef.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body data-page="{{PAGE}}">
+<body data-page="donate">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <!-- top strip -->
@@ -125,7 +125,185 @@
 </div>
 
 <main id="main">
-{{BODY}}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a><span>/</span>Donate</p>
+    <p class="eyebrow">Foundation &amp; donate</p>
+    <h1>They can&rsquo;t speak for themselves. You can.</h1>
+    <p>The reef, the mangrove and the turtles have no way of asking. Everything they need
+      has to come from someone who chose to give it.</p>
+  </div>
+</section>
+
+<!-- HOW YOU CAN HELP -->
+<section class="tight">
+  <div class="wrap-narrow">
+    <p class="eyebrow">How you can help</p>
+    <h2>Donate your share. Change the destiny of a coastline.</h2>
+    <p class="lede">Our trips pay for our trips. They do not pay for a nursery frame in
+      April, a truckload of saplings before the rains, the disposal fee on two tonnes of
+      mixed waste, or a school session in a town where nobody dives.</p>
+    <p>That is what donations are for. Every rupee goes to the mission side of Dravaka, and
+      what it bought gets published at the end of the season.</p>
+  </div>
+</section>
+
+<!-- TARGET -->
+<section class="tint-sand">
+  <div class="wrap">
+    <div class="split split-aside">
+      <div>
+        <p class="eyebrow">This season&rsquo;s target</p>
+        <h2>&#8377;8,00,000 to run the missions through the next season</h2>
+        <div class="progress" role="img" aria-label="61 percent of the season target raised">
+          <span style="width:61%"></span>
+        </div>
+        <p class="progress-meta"><span><strong>&#8377;4,88,000</strong> raised</span><span><strong>61%</strong> of &#8377;8,00,000</span></p>
+
+        <h3 class="mt-2">What the target buys</h3>
+        <div class="table-wrap">
+          <table>
+            <caption class="sr-only">Breakdown of the season funding target</caption>
+            <thead><tr><th scope="col">Line</th><th scope="col">What it covers</th><th scope="col">Cost</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Clean-ups</strong></td><td>12 months &times; 6 bases: bags, gloves, scales, transport, disposal fees</td><td>&#8377;2,60,000</td></tr>
+              <tr><td><strong>Mangrove nursery</strong></td><td>Sapling stock, nursery beds, planting labour, three-year monitoring</td><td>&#8377;1,80,000</td></tr>
+              <tr><td><strong>Coral nurseries</strong></td><td>Frames, rope, cable ties, tank fills for maintenance dives</td><td>&#8377;1,40,000</td></tr>
+              <tr><td><strong>Education</strong></td><td>School and cooperative sessions, materials, travel</td><td>&#8377;1,60,000</td></tr>
+              <tr><td><strong>Admin</strong></td><td>Permits, insurance, accounting &mdash; capped at 7.5%</td><td>&#8377;60,000</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DONATE FORM -->
+      <form class="form-card" data-donate-form data-demo-form>
+        <div class="form-msg" data-form-msg hidden data-msg-template="Thank you, {name}. You&rsquo;ll be taken to our payment provider to complete the gift securely, and we&rsquo;ll email you a receipt plus a note on exactly what your donation is funding this season.">
+          <h3>Thank you</h3>
+          <p data-msg-body></p>
+        </div>
+
+        <h2>Make a donation</h2>
+
+        <div class="seg" role="group" aria-label="Donation frequency">
+          <label><input type="radio" name="frequency" value="once" checked> One-off</label>
+          <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
+        </div>
+
+        <fieldset style="border:0;padding:0;margin:0">
+          <legend class="sr-only">Choose an amount</legend>
+          <div class="amounts">
+            <label><input type="radio" name="amount" value="500"> &#8377;500</label>
+            <label><input type="radio" name="amount" value="1500" checked> &#8377;1,500</label>
+            <label><input type="radio" name="amount" value="5000"> &#8377;5,000</label>
+            <label><input type="radio" name="amount" value="10000"> &#8377;10,000</label>
+            <label><input type="radio" name="amount" value="custom"> Other</label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="d-custom">Custom amount (&#8377;)</label>
+          <input type="number" id="d-custom" name="custom-amount" min="100" step="50" placeholder="Enter an amount" disabled>
+        </div>
+
+        <p class="cart-total"><span>Your gift</span><span data-donate-total>&#8377;1,500 once</span></p>
+
+        <h3 class="mt-2">Your details</h3>
+        <div class="field">
+          <label for="d-name">Full name <span class="req">*</span></label>
+          <input type="text" id="d-name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="d-email">Email <span class="req">*</span></label>
+          <input type="email" id="d-email" name="email" required autocomplete="email">
+          <p class="hint">We email a receipt and a short note on what your gift is funding. Nothing else.</p>
+        </div>
+        <div class="field">
+          <label for="d-phone">Phone</label>
+          <input type="tel" id="d-phone" name="phone" autocomplete="tel">
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="d-anon" name="anonymous">
+          <label for="d-anon" style="font-weight:400">Keep my donation anonymous</label>
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="d-terms" name="terms" required>
+          <label for="d-terms" style="font-weight:400">I accept the <a href="terms.html">terms</a> and <a href="privacy.html">privacy policy</a>. <span class="req">*</span></label>
+        </div>
+
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to payment</button>
+        <p class="small muted center mt-1 mb-0">
+          Payment is completed on our provider&rsquo;s secure page. Card and UPI details are
+          never entered on this site.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT BUYS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <p class="eyebrow">Your involvement</p>
+      <h2>What a donation turns into</h2>
+      <p>Rough, honest conversions. Costs move with fuel and disposal rates.</p>
+    </div>
+    <div class="grid g-4">
+      <div class="feature center"><h3>&#8377;500</h3><p>Gloves, bags and breakfast for four volunteers at one clean-up.</p></div>
+      <div class="feature center"><h3>&#8377;1,500</h3><p>Twenty nursery-raised mangrove saplings, planted and monitored for three seasons.</p></div>
+      <div class="feature center"><h3>&#8377;5,000</h3><p>One coral nursery frame, built, deployed and maintained for a year.</p></div>
+      <div class="feature center"><h3>&#8377;10,000</h3><p>A full school session for 120 students, including travel and materials.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACT & EDUCATION -->
+<section class="tint-deep">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Act &amp; education</p>
+        <h2>Why Dravaka, and what we do with the money</h2>
+        <p>Dravaka is an adventure club with a foundation arm. The club sells dives, courses,
+          treks and camps. The foundation runs the missions. They share people, boats and
+          compressors, and they keep separate books.</p>
+        <p>That structure matters. It means the conservation work is not dependent on a good
+          season, and it means a donation cannot quietly end up subsidising a boat charter.
+          Mission spend is reported at the end of every season with the receipts behind it
+          available to any member or donor who asks for them.</p>
+        <p>Two halves, always: <strong>act</strong> &mdash; the clean-ups, planting and nurseries;
+          and <strong>education</strong> &mdash; the sessions that mean the town behind the beach
+          keeps it clean when we are not there. Neither works alone.</p>
+        <div class="btn-row">
+          <a class="btn btn-ghost" href="about.html">About the organisation</a>
+          <a class="btn btn-ghost" href="impact.html">See the impact record</a>
+        </div>
+      </div>
+      <div><img src="assets/img/awareness.svg" alt="Coastal education session" style="border-radius:var(--r-lg)" width="1200" height="750" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOLLOW -->
+<section class="tint-sand tight">
+  <div class="wrap-narrow center">
+    <p class="eyebrow" style="justify-content:center">Costs nothing</p>
+    <h2>Follow, like, comment, share</h2>
+    <p class="lede">Not every kind of help is money. Sharing a clean-up date with someone who
+      lives near a beach is worth more to us than most single donations.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn btn-outline" href="#">Instagram</a>
+      <a class="btn btn-outline" href="#">Facebook</a>
+      <a class="btn btn-outline" href="#">WhatsApp community</a>
+    </div>
+    <p class="small muted mt-2 mb-0">
+      Donations are governed by our <a href="terms.html">terms</a>,
+      <a href="privacy.html">privacy policy</a> and <a href="refund.html">refund policy</a>.
+      Questions go to <a href="contact.html">the foundation desk</a>.
+    </p>
+  </div>
+</section>
+
 </main>
 
 <!-- footer -->

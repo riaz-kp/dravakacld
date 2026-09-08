@@ -3,7 +3,8 @@
 <!--desc: Scuba diving, snorkelling, trekking and camping across the Indian coast, run by a club that spends its off-days on beach clean-ups, mangrove planting and coral regeneration. Join the tribe, book your adventure.-->
 
 <!-- ===== HERO ===== -->
-<section class="hero">
+<section class="hero" data-hero-3d>
+  <canvas class="hero-canvas" aria-hidden="true"></canvas>
   <div class="hero-bubbles" aria-hidden="true"></div>
   <div class="wrap">
     <div class="hero-inner">
@@ -152,7 +153,7 @@
       </article>
 
       <article class="card reveal">
-        <div class="card-media"><img src="assets/img/marine-life.svg" alt="Sea turtle swimming over sea grass" width="1200" height="750" loading="lazy"></div>
+        <div class="card-media"><img src="assets/img/freedive.svg" alt="A free diver descending on a line" width="1200" height="750" loading="lazy"></div>
         <div class="card-body">
           <span class="tag">Certified divers</span>
           <h3>Fun dives &amp; free diving</h3>
@@ -360,3 +361,8 @@
     </div>
   </div>
 </section>
+
+<!-- 3D hero scene. Three.js is pinned and loaded only on this page; the hero
+     degrades to its CSS gradient if the script or WebGL is unavailable. -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="assets/js/hero3d.js"></script>

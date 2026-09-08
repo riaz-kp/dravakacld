@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{TITLE}}</title>
-<meta name="description" content="{{DESC}}">
+<title>Contact us | Dravaka Adventure Club</title>
+<meta name="description" content="Reach the Dravaka team by phone, WhatsApp or email, or find the base nearest you along the Karnataka, Kerala, Tamil Nadu and island coasts.">
 <meta name="theme-color" content="#062733">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <meta property="og:site_name" content="Dravaka Adventure Club">
-<meta property="og:title" content="{{TITLE}}">
-<meta property="og:description" content="{{DESC}}">
+<meta property="og:title" content="Contact us | Dravaka Adventure Club">
+<meta property="og:description" content="Reach the Dravaka team by phone, WhatsApp or email, or find the base nearest you along the Karnataka, Kerala, Tamil Nadu and island coasts.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/img/reef.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body data-page="{{PAGE}}">
+<body data-page="contact">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <!-- top strip -->
@@ -125,7 +125,121 @@
 </div>
 
 <main id="main">
-{{BODY}}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a><span>/</span>Contact</p>
+    <p class="eyebrow">Contact us</p>
+    <h1>Talk to someone who has been in the water this week.</h1>
+    <p>WhatsApp is fastest. For conditions, medical clearance or group bookings, it is
+      usually better than the form.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="split split-aside">
+      <div>
+        <h2>Get in touch</h2>
+        <div class="grid g-2 mb-2">
+          <div class="feature">
+            <h3>Bookings &amp; dives</h3>
+            <p class="mb-1"><a href="https://wa.me/919900000000">WhatsApp +91 99000 00000</a><br>
+              <a href="tel:+919900000000">+91 99000 00000</a><br>
+              <a href="mailto:dive@dravaka.example">dive@dravaka.example</a></p>
+            <p class="small muted mb-0">7 am&ndash;8 pm IST, daily in season</p>
+          </div>
+          <div class="feature">
+            <h3>Foundation &amp; donations</h3>
+            <p class="mb-1"><a href="mailto:foundation@dravaka.example">foundation@dravaka.example</a><br>
+              <a href="tel:+919900000001">+91 99000 00001</a></p>
+            <p class="small muted mb-0">Mon&ndash;Fri, 10 am&ndash;6 pm IST</p>
+          </div>
+          <div class="feature">
+            <h3>Shop &amp; orders</h3>
+            <p class="mb-1"><a href="mailto:shop@dravaka.example">shop@dravaka.example</a></p>
+            <p class="small muted mb-0">Replies within one working day</p>
+          </div>
+          <div class="feature">
+            <h3>Press &amp; partnerships</h3>
+            <p class="mb-1"><a href="mailto:hello@dravaka.example">hello@dravaka.example</a></p>
+            <p class="small muted mb-0">Schools and cooperatives, same address</p>
+          </div>
+        </div>
+
+        <h3>Our bases</h3>
+        <div class="table-wrap">
+          <table>
+            <caption class="sr-only">Dravaka base locations and seasons</caption>
+            <thead><tr><th scope="col">Base</th><th scope="col">Where</th><th scope="col">Season</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Murudeshwar</strong></td><td>Beach Road, Murudeshwar, Uttara Kannada, Karnataka</td><td>Oct&ndash;May</td></tr>
+              <tr><td><strong>Kaup</strong></td><td>Lighthouse Road, Kaup, Udupi, Karnataka</td><td>Nov&ndash;Apr</td></tr>
+              <tr><td><strong>Pondicherry</strong></td><td>Goubert Avenue, Puducherry</td><td>Feb&ndash;Sep</td></tr>
+              <tr><td><strong>Kovalam</strong></td><td>Lighthouse Beach, Kovalam, Thiruvananthapuram, Kerala</td><td>Oct&ndash;Mar</td></tr>
+              <tr><td><strong>Agatti</strong></td><td>Lakshadweep &mdash; seasonal, permit required</td><td>Oct&ndash;May</td></tr>
+              <tr><td><strong>Havelock</strong></td><td>Swaraj Dweep, Andaman &mdash; expeditions only</td><td>Nov&ndash;Apr</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="small muted">Registered office: Dravaka Adventure Club, Murudeshwar, Karnataka 581350, India.</p>
+      </div>
+
+      <form class="form-card" data-demo-form>
+        <div class="form-msg" data-form-msg hidden data-msg-template="Thanks, {name}. Your message is with the right desk and we&rsquo;ll reply within one working day. If it&rsquo;s urgent or about conditions today, WhatsApp us instead &mdash; that reaches whoever is on the boat.">
+          <h3>Message sent</h3>
+          <p data-msg-body></p>
+        </div>
+
+        <h2>Send a message</h2>
+        <div class="field">
+          <label for="c-name">Name <span class="req">*</span></label>
+          <input type="text" id="c-name" name="name" required autocomplete="name">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="c-email">Email <span class="req">*</span></label>
+            <input type="email" id="c-email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="c-phone">Phone</label>
+            <input type="tel" id="c-phone" name="phone" autocomplete="tel">
+          </div>
+        </div>
+        <div class="field">
+          <label for="c-topic">What is it about?</label>
+          <select id="c-topic" name="topic">
+            <option>Booking a dive or course</option>
+            <option>Trekking or camping</option>
+            <option>Membership</option>
+            <option>Volunteering</option>
+            <option>Donations and the foundation</option>
+            <option>Shop order</option>
+            <option>School or community session</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="c-message">Message <span class="req">*</span></label>
+          <textarea id="c-message" name="message" required></textarea>
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="c-consent" name="consent" required>
+          <label for="c-consent" style="font-weight:400">I accept the <a href="privacy.html">privacy policy</a>. <span class="req">*</span></label>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="tint-sand tight">
+  <div class="wrap-narrow center">
+    <h2>Looking for an answer right now?</h2>
+    <p class="lede">Most questions are already covered.</p>
+    <a class="btn btn-deep" href="help.html">Help centre &amp; FAQ</a>
+  </div>
+</section>
+
 </main>
 
 <!-- footer -->

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop — gear that funds the missions | Dravaka Adventure Club</title>
+<meta name="description" content="Bottles, dry bags, masks and Dravaka merchandise. Every order funds a measurable amount of clean-up work on the coast.">
+<meta name="theme-color" content="#062733">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:site_name" content="Dravaka Adventure Club">
+<meta property="og:title" content="Shop — gear that funds the missions | Dravaka Adventure Club">
+<meta property="og:description" content="Bottles, dry bags, masks and Dravaka merchandise. Every order funds a measurable amount of clean-up work on the coast.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/reef.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="shop">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- top strip -->
+<div class="topbar">
+  <div class="wrap">
+    <nav class="topbar-links" aria-label="Secondary">
+      <a href="join.html">Membership</a>
+      <a href="missions.html">Missions</a>
+      <a href="shop.html">Shop</a>
+      <a href="donate.html">Foundation &amp; Donate</a>
+    </nav>
+    <p class="topbar-note mb-0">Karnataka &middot; Kerala &middot; Andaman &middot; Lakshadweep</p>
+  </div>
+</div>
+
+<!-- header -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="bl" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#2ec4b6"/><stop offset=".55" stop-color="#0f7c8a"/><stop offset="1" stop-color="#062733"/>
+        </linearGradient></defs>
+        <circle cx="32" cy="32" r="30" fill="url(#bl)"/>
+        <path d="M6 39q7-6 13 0t13 0 13 0 13 0v7q-6 6-13 0t-13 0-13 0-13 0z" fill="#fff" opacity=".92"/>
+        <path d="M32 12c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15z" fill="#ff6b4a"/>
+      </svg>
+      <span>
+        <span class="brand-name">DRAVAKA</span>
+        <span class="brand-tag">Adventure Club</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-nav="index">Home</a>
+      <a href="adventures.html" data-nav="adventures">Adventures</a>
+      <a href="missions.html" data-nav="missions">Missions</a>
+      <a href="impact.html" data-nav="impact">Impact</a>
+      <a href="news.html" data-nav="news">News</a>
+      <a href="gallery.html" data-nav="gallery">Gallery</a>
+      <a href="shop.html" data-nav="shop">Shop</a>
+      <a href="about.html" data-nav="about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="search-toggle" type="button" data-search-toggle aria-expanded="false" aria-controls="site-search" aria-label="Search the site">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="donate.html" data-nav="donate">Donate</a>
+      <a class="btn btn-deep btn-sm" href="join.html" data-nav="join">Join the Tribe</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- search drawer -->
+<div class="search-panel" id="site-search" hidden>
+  <div class="wrap">
+    <form role="search">
+      <label class="sr-only" for="q">Search Dravaka</label>
+      <input type="search" id="q" name="q" placeholder="Search dives, missions, gear, courses&hellip;" autocomplete="off">
+      <button class="btn btn-deep" type="submit">Search</button>
+    </form>
+    <div data-search-results aria-live="polite"></div>
+    <div class="search-cats">
+      <a href="adventures.html">Scuba</a>
+      <a href="adventures.html#courses">Courses</a>
+      <a href="adventures.html#land">Trek &amp; Camp</a>
+      <a href="missions.html">Missions</a>
+      <a href="shop.html">Shop</a>
+      <a href="donate.html">Donate</a>
+      <a href="join.html">Membership</a>
+    </div>
+  </div>
+</div>
+
+<!-- mobile drawer -->
+<div class="nav-backdrop" hidden></div>
+<div class="mobile-nav" aria-label="Mobile menu">
+  <div class="mobile-nav-head">
+    <span class="brand-name">DRAVAKA</span>
+    <button class="search-toggle" type="button" data-nav-close aria-label="Close menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <ul>
+    <li><a href="index.html" data-nav="index">Home</a></li>
+    <li><a href="adventures.html" data-nav="adventures">Adventures</a></li>
+    <li><a href="booking.html" data-nav="booking">Book a dive</a></li>
+    <li><a href="missions.html" data-nav="missions">Missions</a></li>
+    <li><a href="impact.html" data-nav="impact">Our impact</a></li>
+    <li><a href="news.html" data-nav="news">News</a></li>
+    <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+    <li><a href="shop.html" data-nav="shop">Shop</a></li>
+    <li><a href="about.html" data-nav="about">About us</a></li>
+    <li><a href="help.html" data-nav="help">Help centre</a></li>
+    <li><a href="contact.html" data-nav="contact">Contact</a></li>
+  </ul>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="donate.html" data-nav="donate">Donate</a>
+    <a class="btn btn-deep" href="join.html" data-nav="join">Join the Tribe</a>
+  </div>
+</div>
+
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a><span>/</span>Shop</p>
+    <p class="eyebrow">Shop now</p>
+    <h1>Kit we actually use, and what buying it pays for.</h1>
+    <p>No novelty tat. Everything here is either something we hand out on trips or
+      something we got tired of watching people arrive without.</p>
+  </div>
+</section>
+
+<section class="tight">
+  <div class="wrap">
+    <div class="filters" data-filter-group data-filter-target="#shop-grid" role="group" aria-label="Filter products">
+      <button type="button" data-filter="all" aria-pressed="true">Everything</button>
+      <button type="button" data-filter="gear" aria-pressed="false">Dive &amp; trail gear</button>
+      <button type="button" data-filter="wear" aria-pressed="false">Wear</button>
+      <button type="button" data-filter="daily" aria-pressed="false">Everyday</button>
+    </div>
+
+    <div class="grid g-3" id="shop-grid">
+      <article class="card" data-cat="daily">
+        <div class="card-media product-media"><img src="assets/img/gear.svg" alt="Insulated steel bottle" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Everyday</span>
+          <h3>Insulated steel bottle, 750&nbsp;ml</h3>
+          <p>Double-walled, leakproof, survives a boat deck. The one piece of kit we ask everybody to bring.</p>
+          <p class="impact-note">Funds roughly <strong>3&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;950</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="gear">
+        <div class="card-media product-media"><img src="assets/img/reef.svg" alt="Low-volume dive mask" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Dive gear</span>
+          <h3>Low-volume mask</h3>
+          <p>Tempered glass, silicone skirt, easy to clear. Fit matters more than price &mdash; try it at a base before you buy if you can.</p>
+          <p class="impact-note">Funds roughly <strong>10&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;3,200</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="gear">
+        <div class="card-media product-media"><img src="assets/img/kayak.svg" alt="Roll-top dry bag" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Dive gear</span>
+          <h3>Dry bag, 20&nbsp;L</h3>
+          <p>Roll-top, welded seams, made from recycled ripstop. Keeps a phone and a change of clothes dry on any boat we run.</p>
+          <p class="impact-note">Funds roughly <strong>4&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;1,250</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="wear">
+        <div class="card-media product-media"><img src="assets/img/tribe.svg" alt="Dravaka organic cotton tee" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Wear</span>
+          <h3>Tribe tee</h3>
+          <p>Organic cotton, screen printed in Mangaluru, sized for people who will actually wear it on a boat.</p>
+          <p class="impact-note">Funds roughly <strong>3&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;890</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="wear gear">
+        <div class="card-media product-media"><img src="assets/img/marine-life.svg" alt="Rash guard" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Wear</span>
+          <h3>Rash guard, UPF 50+</h3>
+          <p>Long sleeve, recycled polyamide. Does the job sunscreen does without leaving anything on the reef.</p>
+          <p class="impact-note">Funds roughly <strong>6&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;1,850</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="daily">
+        <div class="card-media product-media"><img src="assets/img/coral.svg" alt="Reef-safe sun stick" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Everyday</span>
+          <h3>Reef-safe sun stick</h3>
+          <p>Mineral filter, no oxybenzone or octinoxate, in a paper tube. Reapply it, do not rely on it alone.</p>
+          <p class="impact-note">Funds roughly <strong>2&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;620</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="gear">
+        <div class="card-media product-media"><img src="assets/img/trek.svg" alt="Leech socks" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Trail gear</span>
+          <h3>Leech socks</h3>
+          <p>Cotton twill, knee height, drawstring. Cheap, unfashionable, and the difference between enjoying a monsoon trek and enduring one.</p>
+          <p class="impact-note">Funds roughly <strong>1.5&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;480</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="gear daily">
+        <div class="card-media product-media"><img src="assets/img/camp.svg" alt="Rechargeable head torch" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Trail gear</span>
+          <h3>Rechargeable head torch</h3>
+          <p>USB-C, red night mode, 200 lumens. Required on every camp and worth having on any boat before dawn.</p>
+          <p class="impact-note">Funds roughly <strong>5&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;1,400</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+
+      <article class="card" data-cat="daily">
+        <div class="card-media product-media"><img src="assets/img/open-water.svg" alt="Waterproof logbook" width="1200" height="750" loading="lazy"></div>
+        <div class="card-body">
+          <span class="tag">Everyday</span>
+          <h3>Logbook &amp; pencil set</h3>
+          <p>Waterproof pages, stitched binding. Your next course will ask for logged dives, and a phone note is not a log.</p>
+          <p class="impact-note">Funds roughly <strong>2&nbsp;kg</strong> of beach clean-up.</p>
+          <div class="card-foot"><span class="price">&#8377;650</span><a class="btn btn-outline btn-sm" href="#checkout">Add</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKOUT -->
+<section class="tint-sand" id="checkout">
+  <div class="wrap">
+    <div class="split split-aside">
+      <div>
+        <p class="eyebrow">Checkout</p>
+        <h2>Where your order goes</h2>
+        <p class="lede">Margin from the shop goes into the same mission fund as membership
+          and donations. Nothing here is sold at a markup that funds anything else.</p>
+
+        <div class="form-card mt-2">
+          <h3>Order summary</h3>
+          <p class="cart-line"><span>Insulated steel bottle &times; 1</span><span>&#8377;950</span></p>
+          <p class="cart-line"><span>Dry bag, 20&nbsp;L &times; 1</span><span>&#8377;1,250</span></p>
+          <p class="cart-line"><span>Shipping (India)</span><span>&#8377;120</span></p>
+          <p class="cart-total"><span>Total</span><span>&#8377;2,320</span></p>
+          <p class="impact-note mt-1 mb-0">This order funds around <strong>7&nbsp;kg</strong> of
+            beach clean-up &mdash; about one volunteer&rsquo;s haul on a Saturday morning.</p>
+        </div>
+
+        <div class="callout mt-2">
+          <p><strong>Once your order ships</strong> we email you a receipt, tracking, and a
+            note telling you which base your order&rsquo;s contribution went to. You are part of
+            the tribe from that point on &mdash; clean-up dates included.</p>
+        </div>
+
+        <p class="small muted">
+          By ordering you accept the <a href="terms.html">terms and conditions</a> and the
+          <a href="refund.html">return policy</a>. Questions about sizing, stock or delivery
+          go to <a href="contact.html">our team</a>.
+        </p>
+      </div>
+
+      <form class="form-card" data-demo-form>
+        <div class="form-msg" data-form-msg hidden data-msg-template="Thanks, {name}. You&rsquo;ll be taken to our payment provider to complete the order securely. We&rsquo;ll email your receipt, tracking, and a note on the clean-up work your order funds.">
+          <h3>Order details saved</h3>
+          <p data-msg-body></p>
+        </div>
+
+        <h2>Your details</h2>
+        <div class="field">
+          <label for="s-name">Full name <span class="req">*</span></label>
+          <input type="text" id="s-name" name="name" required autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="s-email">Email <span class="req">*</span></label>
+          <input type="email" id="s-email" name="email" required autocomplete="email">
+          <p class="hint">Receipt, tracking and the impact note go here.</p>
+        </div>
+        <div class="field">
+          <label for="s-phone">Phone <span class="req">*</span></label>
+          <input type="tel" id="s-phone" name="phone" required autocomplete="tel">
+        </div>
+        <div class="field">
+          <label for="s-address">Delivery address <span class="req">*</span></label>
+          <textarea id="s-address" name="address" required autocomplete="street-address"></textarea>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="s-city">City <span class="req">*</span></label>
+            <input type="text" id="s-city" name="city" required autocomplete="address-level2">
+          </div>
+          <div class="field">
+            <label for="s-pin">PIN code <span class="req">*</span></label>
+            <input type="text" id="s-pin" name="pin" required inputmode="numeric" pattern="[0-9]{6}" autocomplete="postal-code">
+          </div>
+        </div>
+
+        <h3 class="mt-2">Payment</h3>
+        <p class="small muted">Choose a method. You will be taken to the provider&rsquo;s secure
+          page to complete payment &mdash; card and UPI details are never entered on this site.</p>
+        <div class="field">
+          <label for="s-pay">Payment method <span class="req">*</span></label>
+          <select id="s-pay" name="payment" required>
+            <option>UPI</option>
+            <option>Credit or debit card</option>
+            <option>Net banking</option>
+          </select>
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="s-terms" name="terms" required>
+          <label for="s-terms" style="font-weight:400">I accept the <a href="terms.html">terms</a> and <a href="refund.html">return policy</a>. <span class="req">*</span></label>
+        </div>
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to payment</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ TEASER -->
+<section class="tight">
+  <div class="wrap-narrow">
+    <h2>Common questions</h2>
+    <details class="acc"><summary>How long does delivery take?</summary><div class="acc-body"><p>Three to six working days across India. Island deliveries to Lakshadweep and the Andamans take longer and we will tell you how long before you pay.</p></div></details>
+    <details class="acc"><summary>Can I return something?</summary><div class="acc-body"><p>Yes, unused and in its packaging, within 14 days. Masks and anything worn against the skin can only be returned unopened, for hygiene reasons. Full detail on the <a href="refund.html">return policy</a>.</p></div></details>
+    <details class="acc"><summary>Do you ship outside India?</summary><div class="acc-body"><p>Not yet. Email <a href="contact.html">the team</a> if you want something sent abroad and we will quote it individually.</p></div></details>
+    <details class="acc"><summary>Is the &ldquo;funds X kg of clean-up&rdquo; figure real?</summary><div class="acc-body"><p>It is a calculated estimate, not a marketing line. We divide the mission budget by the tonnage recovered to get a cost per kilogram, then apply each product&rsquo;s margin against it. The working is in the season report.</p></div></details>
+  </div>
+</section>
+
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <defs><linearGradient id="fl" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2ec4b6"/><stop offset=".55" stop-color="#0f7c8a"/><stop offset="1" stop-color="#062733"/>
+            </linearGradient></defs>
+            <circle cx="32" cy="32" r="30" fill="url(#fl)"/>
+            <path d="M6 39q7-6 13 0t13 0 13 0 13 0v7q-6 6-13 0t-13 0-13 0-13 0z" fill="#fff" opacity=".92"/>
+            <path d="M32 12c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15z" fill="#ff6b4a"/>
+          </svg>
+          <span>
+            <span class="brand-name">DRAVAKA</span>
+            <span class="brand-tag">Adventure Club</span>
+          </span>
+        </a>
+        <p>An adventure club that treats the coast as something to look after, not just something to play in. Every trip funds the clean-ups, nurseries and awareness work that keep it worth returning to.</p>
+        <form class="newsletter" data-demo-form data-form-msg-target="#news-signup-msg">
+          <label class="sr-only" for="footer-email">Email address</label>
+          <input type="email" id="footer-email" name="email" placeholder="Your email" required>
+          <button class="btn btn-primary btn-sm" type="submit">Sign up</button>
+        </form>
+        <p class="small" id="news-signup-msg" data-form-msg hidden data-msg-template="You&rsquo;re on the list. Expect tide charts, trip openings and clean-up dates &mdash; nothing else."><span data-msg-body></span></p>
+        <div class="socials">
+          <a href="#" aria-label="Dravaka on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Dravaka on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="#" aria-label="Dravaka on WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 15L2 22l5.2-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6s.6-1.8.8-2.1c.2-.2.5-.3.6-.3h.5c.2 0 .4-.1.6.4l.8 2c.1.2.1.3 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1.1 1.3 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.4z"/></svg></a>
+          <a href="#" aria-label="Dravaka on YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.5a2.5 2.5 0 0 0-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.5a2.5 2.5 0 0 0 1.8-1.8C22 15.2 22 12 22 12zM10 15V9l5 3z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Adventure</h4>
+        <ul>
+          <li><a href="adventures.html#trydive">Try Dive &amp; DSD</a></li>
+          <li><a href="adventures.html#courses">Courses</a></li>
+          <li><a href="adventures.html#snorkel">Snorkelling</a></li>
+          <li><a href="adventures.html#freedive">Free diving</a></li>
+          <li><a href="adventures.html#locations">Dive locations</a></li>
+          <li><a href="booking.html">Book now</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>The Tribe</h4>
+        <ul>
+          <li><a href="join.html">Join the Tribe</a></li>
+          <li><a href="join.html#volunteer">Become a volunteer</a></li>
+          <li><a href="missions.html">Our missions</a></li>
+          <li><a href="impact.html">Our impact</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="help.html">Help centre &amp; FAQ</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="terms.html">Terms &amp; conditions</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="refund.html">Refund &amp; return policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="mb-0">&copy; <span data-year>2026</span> Dravaka Adventure Club. Let&rsquo;s do it together.</p>
+      <nav aria-label="Legal">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="refund.html">Refunds</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
