@@ -1,0 +1,181 @@
+<!--slug: booking-->
+<!--title: Book your adventure-->
+<!--desc: Book a Dravaka try dive, course, fun dive, snorkelling session, trek or camp. Liability form, insurance declaration and payment handled before you arrive.-->
+
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a><span>/</span>Book</p>
+    <p class="eyebrow">Take action</p>
+    <h1>Book your adventure.</h1>
+    <p>Tell us what you want and when. We confirm within 24 hours, send the liability form,
+      and only then take payment.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="split" style="grid-template-columns:1fr .85fr;align-items:start">
+
+      <form class="form-card" data-demo-form>
+        <div class="form-msg" data-form-msg hidden data-msg-template="Thanks, {name}. Your request is in. We&rsquo;ll confirm availability within 24 hours by phone or email, then send the liability form and a secure payment link. Nothing is charged until you have a confirmed place.">
+          <h3>Request received</h3>
+          <p data-msg-body></p>
+        </div>
+
+        <h2>Booking request</h2>
+        <p class="small muted">Fields marked <span class="req">*</span> are required.</p>
+
+        <h3 class="mt-2">1. What you want to do</h3>
+        <div class="field">
+          <label for="b-programme">Programme <span class="req">*</span></label>
+          <select id="b-programme" name="programme" required>
+            <optgroup label="Scuba">
+              <option>Try Dive &mdash; &#8377;3,500</option>
+              <option>DSD programme &mdash; &#8377;6,900</option>
+              <option>Fun dives &mdash; from &#8377;2,600</option>
+              <option>Free diving intro &mdash; &#8377;4,200</option>
+              <option>Snorkelling &mdash; &#8377;1,400</option>
+              <option>Speciality course &mdash; from &#8377;7,500</option>
+            </optgroup>
+            <optgroup label="Courses">
+              <option>Open Water Diver &mdash; &#8377;24,000</option>
+              <option>Advanced Open Water &mdash; &#8377;21,000</option>
+              <option>EFR &mdash; &#8377;9,500</option>
+              <option>Rescue Diver &mdash; &#8377;27,500</option>
+              <option>Divemaster &mdash; &#8377;68,000</option>
+              <option>IDC &mdash; on request</option>
+              <option>Zero to Hero package &mdash; &#8377;1,35,000</option>
+            </optgroup>
+            <optgroup label="Land">
+              <option>Trekking &mdash; &#8377;2,800 / day</option>
+              <option>Camping &mdash; &#8377;2,200 / night</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="b-location">Location <span class="req">*</span></label>
+            <select id="b-location" name="location" required>
+              <option>Murudeshwar (Netrani)</option>
+              <option>Kaup, Udupi</option>
+              <option>Pondicherry</option>
+              <option>Kovalam</option>
+              <option>Lakshadweep</option>
+              <option>Andaman</option>
+              <option>Western Ghats (trek / camp)</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="b-date">Preferred date <span class="req">*</span></label>
+            <input type="date" id="b-date" name="date" required>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="b-people">Number of people <span class="req">*</span></label>
+            <input type="number" id="b-people" name="people" min="1" max="20" value="1" required>
+          </div>
+          <div class="field">
+            <label for="b-cert">Certification level</label>
+            <select id="b-cert" name="certification">
+              <option>None &mdash; first time</option>
+              <option>Open Water</option>
+              <option>Advanced Open Water</option>
+              <option>Rescue</option>
+              <option>Divemaster or above</option>
+            </select>
+          </div>
+        </div>
+
+        <h3 class="mt-2">2. Who you are</h3>
+        <div class="field">
+          <label for="b-name">Full name <span class="req">*</span></label>
+          <input type="text" id="b-name" name="name" required autocomplete="name">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="b-phone">Phone / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="b-phone" name="phone" required autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="b-email">Email <span class="req">*</span></label>
+            <input type="email" id="b-email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="field">
+          <label for="b-address">Address <span class="req">*</span></label>
+          <textarea id="b-address" name="address" required autocomplete="street-address" style="min-height:90px"></textarea>
+          <p class="hint">Needed for the liability form and, where applicable, the Lakshadweep permit.</p>
+        </div>
+
+        <h3 class="mt-2">3. Safety declarations</h3>
+        <div class="field">
+          <label for="b-medical">Medical conditions we should know about</label>
+          <textarea id="b-medical" name="medical" placeholder="Asthma, heart or ear conditions, pregnancy, recent surgery, medication, or &ldquo;none&rdquo;."></textarea>
+          <p class="hint">Some conditions require a doctor&rsquo;s clearance before diving. Telling us early avoids being turned away on the day.</p>
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="b-liability" name="liability" required>
+          <label for="b-liability" style="font-weight:400">I understand a signed liability and medical declaration must be completed before any activity, and I confirm the information above is accurate. <span class="req">*</span></label>
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="b-insurance" name="insurance" required>
+          <label for="b-insurance" style="font-weight:400">I have read how <a href="terms.html#insurance">insurance cover</a> works on Dravaka trips and what it does and does not include. <span class="req">*</span></label>
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="b-terms" name="terms" required>
+          <label for="b-terms" style="font-weight:400">I accept the <a href="terms.html">terms and conditions</a>, <a href="terms.html#booking">booking policy</a> and <a href="refund.html">refund policy</a>. <span class="req">*</span></label>
+        </div>
+
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Send booking request</button>
+        <p class="small muted center mt-1 mb-0">No payment is taken on this form.</p>
+      </form>
+
+      <aside>
+        <div class="form-card mb-2">
+          <h3>Do you have to pay now?</h3>
+          <p class="small">No. We confirm your place first. Once confirmed we send a secure
+            payment link for a <strong>25% deposit</strong>, with the balance due on the day.
+            Courses over &#8377;50,000 can be split across two instalments.</p>
+          <p class="small mb-0">We accept UPI, cards and bank transfer through a payment
+            gateway. Card details are never entered on this site and never handled by us.</p>
+        </div>
+
+        <div class="form-card mb-2">
+          <h3>Refunds, briefly</h3>
+          <ul class="check small">
+            <li>Cancel 14+ days out &mdash; full refund of the deposit</li>
+            <li>7&ndash;13 days &mdash; 50% refund or a free reschedule</li>
+            <li>Under 7 days &mdash; no refund, one reschedule within the season</li>
+            <li><strong>We cancel for weather or safety &mdash; full refund or reschedule, your choice</strong></li>
+          </ul>
+          <a class="btn btn-outline btn-sm" href="refund.html">Full refund policy</a>
+        </div>
+
+        <div class="form-card">
+          <h3>Talk to the team</h3>
+          <p class="small">Faster than the form if you have a question about conditions,
+            medical clearance or group bookings.</p>
+          <ul class="check small">
+            <li>WhatsApp <a href="https://wa.me/919900000000">+91 99000 00000</a></li>
+            <li>Phone <a href="tel:+919900000000">+91 99000 00000</a></li>
+            <li>Email <a href="mailto:dive@dravaka.example">dive@dravaka.example</a></li>
+          </ul>
+          <p class="small muted mb-0">7 am&ndash;8 pm IST, every day in season.</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="tint-sand tight">
+  <div class="wrap">
+    <div class="sec-head center"><h2>Before you arrive</h2></div>
+    <div class="grid g-4">
+      <div class="feature"><h3>Bring ID</h3><p>Government photo ID for everyone in the party. Mandatory for boat manifests and permits.</p></div>
+      <div class="feature"><h3>Sleep and hydrate</h3><p>No alcohol for 12 hours before a dive. Dehydration is the most common cause of a cut-short first dive.</p></div>
+      <div class="feature"><h3>No flying for 18 hours</h3><p>After your last dive. Plan the trip home around it, not the other way round.</p></div>
+      <div class="feature"><h3>Leave the plastic</h3><p>We do not supply single-use bottles. Bring something refillable.</p></div>
+    </div>
+  </div>
+</section>

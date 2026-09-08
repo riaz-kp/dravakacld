@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Dravaka</title>
+<meta name="description" content="Who Dravaka is, what we run, what we do for the coast we operate on, and what you can do with us — from a first try dive to a mangrove planting weekend.">
+<meta name="theme-color" content="#062733">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<meta property="og:site_name" content="Dravaka Adventure Club">
+<meta property="og:title" content="About Dravaka">
+<meta property="og:description" content="Who Dravaka is, what we run, what we do for the coast we operate on, and what you can do with us — from a first try dive to a mangrove planting weekend.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/reef.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="about">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- top strip -->
+<div class="topbar">
+  <div class="wrap">
+    <nav class="topbar-links" aria-label="Secondary">
+      <a href="join.html">Membership</a>
+      <a href="missions.html">Missions</a>
+      <a href="shop.html">Shop</a>
+      <a href="donate.html">Foundation &amp; Donate</a>
+    </nav>
+    <p class="topbar-note mb-0">Karnataka &middot; Kerala &middot; Andaman &middot; Lakshadweep</p>
+  </div>
+</div>
+
+<!-- header -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <defs><linearGradient id="bl" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#2ec4b6"/><stop offset=".55" stop-color="#0f7c8a"/><stop offset="1" stop-color="#062733"/>
+        </linearGradient></defs>
+        <circle cx="32" cy="32" r="30" fill="url(#bl)"/>
+        <path d="M6 39q7-6 13 0t13 0 13 0 13 0v7q-6 6-13 0t-13 0-13 0-13 0z" fill="#fff" opacity=".92"/>
+        <path d="M32 12c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15z" fill="#ff6b4a"/>
+      </svg>
+      <span>
+        <span class="brand-name">DRAVAKA</span>
+        <span class="brand-tag">Adventure Club</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" data-nav="home">Home</a>
+      <a href="adventures.html" data-nav="adventures">Adventures</a>
+      <a href="missions.html" data-nav="missions">Missions</a>
+      <a href="impact.html" data-nav="impact">Impact</a>
+      <a href="news.html" data-nav="news">News</a>
+      <a href="gallery.html" data-nav="gallery">Gallery</a>
+      <a href="shop.html" data-nav="shop">Shop</a>
+      <a href="about.html" data-nav="about">About</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="search-toggle" type="button" data-search-toggle aria-expanded="false" aria-controls="site-search" aria-label="Search the site">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      </button>
+      <a class="btn btn-primary btn-sm" href="donate.html">Donate</a>
+      <a class="btn btn-deep btn-sm" href="join.html">Join the Tribe</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- search drawer -->
+<div class="search-panel" id="site-search" hidden>
+  <div class="wrap">
+    <form role="search">
+      <label class="sr-only" for="q">Search Dravaka</label>
+      <input type="search" id="q" name="q" placeholder="Search dives, missions, gear, courses&hellip;" autocomplete="off">
+      <button class="btn btn-deep" type="submit">Search</button>
+    </form>
+    <div data-search-results aria-live="polite"></div>
+    <div class="search-cats">
+      <a href="adventures.html">Scuba</a>
+      <a href="adventures.html#courses">Courses</a>
+      <a href="adventures.html#land">Trek &amp; Camp</a>
+      <a href="missions.html">Missions</a>
+      <a href="shop.html">Shop</a>
+      <a href="donate.html">Donate</a>
+      <a href="join.html">Membership</a>
+    </div>
+  </div>
+</div>
+
+<!-- mobile drawer -->
+<div class="nav-backdrop" hidden></div>
+<div class="mobile-nav" aria-label="Mobile menu">
+  <div class="mobile-nav-head">
+    <span class="brand-name">DRAVAKA</span>
+    <button class="search-toggle" type="button" data-nav-close aria-label="Close menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <ul>
+    <li><a href="index.html" data-nav="home">Home</a></li>
+    <li><a href="adventures.html" data-nav="adventures">Adventures</a></li>
+    <li><a href="booking.html" data-nav="booking">Book a dive</a></li>
+    <li><a href="missions.html" data-nav="missions">Missions</a></li>
+    <li><a href="impact.html" data-nav="impact">Our impact</a></li>
+    <li><a href="news.html" data-nav="news">News</a></li>
+    <li><a href="gallery.html" data-nav="gallery">Gallery</a></li>
+    <li><a href="shop.html" data-nav="shop">Shop</a></li>
+    <li><a href="about.html" data-nav="about">About us</a></li>
+    <li><a href="help.html" data-nav="help">Help centre</a></li>
+    <li><a href="contact.html" data-nav="contact">Contact</a></li>
+  </ul>
+  <div class="btn-row">
+    <a class="btn btn-primary" href="donate.html">Donate</a>
+    <a class="btn btn-deep" href="join.html">Join the Tribe</a>
+  </div>
+</div>
+
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <p class="crumbs"><a href="index.html">Home</a><span>/</span>About us</p>
+    <p class="eyebrow">About us</p>
+    <h1>An adventure club that took on a second job.</h1>
+    <p>Dravaka runs dives, treks and camps on the Indian coast &mdash; and puts the proceeds
+      and the people into keeping that coast worth visiting.</p>
+  </div>
+</section>
+
+<!-- ABOUT DRAVAKA -->
+<section>
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">About Dravaka</p>
+        <h2>Where it started</h2>
+        <p>
+          A group of us used to dive the same handful of sites off the Karnataka coast
+          every season. Over about four years we watched the same thing happen at each
+          one: more plastic in the water column, more bleached heads on the reef, less of
+          the fish life that made the site worth the boat ride.
+        </p>
+        <p>
+          You can respond to that in two ways. You can find somewhere else to dive, or you
+          can do something about the place you already love. Dravaka is the second option,
+          organised properly.
+        </p>
+        <p>
+          We are an adventure club first. We teach scuba from the first breath through to
+          instructor level, we run snorkelling and free diving, and we take people
+          trekking and camping inland when the sea is closed. The conservation work is not
+          a side project bolted on for appearances &mdash; it is scheduled, budgeted and
+          measured like everything else we run.
+        </p>
+      </div>
+      <div>
+        <img src="assets/img/tribe.svg" alt="Silhouettes of a group on the beach at sunset" style="border-radius:var(--r-lg);box-shadow:var(--sh-2)" width="1200" height="750">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE ARE DOING -->
+<section class="tint-sand">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What Dravaka is doing</p>
+      <h2>Six lines of work, running all year</h2>
+      <p>None of it is dramatic. It is the same work, done on a schedule, in the same places, long enough to show up in the water.</p>
+    </div>
+    <div class="grid g-3">
+      <div class="feature"><h3>Waste management</h3><p>Everything we collect is sorted and weighed on site, then routed to local recyclers or safe disposal. We publish the tonnage.</p></div>
+      <div class="feature"><h3>Pollution control</h3><p>Water sampling at our six bases, plus pressure on the specific upstream sources that keep showing up in the results.</p></div>
+      <div class="feature"><h3>Coral regeneration</h3><p>Rope and frame nurseries off Netrani and Kaup, with fragments of opportunity grown out and returned to the reef.</p></div>
+      <div class="feature"><h3>Beach clean-ups</h3><p>First Saturday of every month, six bases, open to anyone. Members, guests, schools, whoever turns up.</p></div>
+      <div class="feature"><h3>Mangrove cultivation</h3><p>Nursery-raised saplings planted along estuary banks with the local panchayats, then monitored for three seasons.</p></div>
+      <div class="feature"><h3>Educational awareness</h3><p>Free sessions for schools, fishing cooperatives and resorts on waste, tides, reef health and what it is worth locally.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT AFFECTS THE ENVIRONMENT -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">How it affects our environment</p>
+      <h2>What actually changes when this work gets done</h2>
+      <p>Five systems, and the specific difference each one sees. This is the positive side &mdash; and it is measurable.</p>
+    </div>
+    <div class="grid g-2">
+      <div class="feature">
+        <h3>Ecosystem</h3>
+        <p>Remove the plastic and the ghost nets and the food web reassembles from the bottom up. Grazers come back to cleared substrate, predators follow the grazers, and the site starts holding fish between seasons instead of emptying out.</p>
+      </div>
+      <div class="feature">
+        <h3>Ocean</h3>
+        <p>Less floating debris means less of it fragmenting into pieces small enough to be eaten. Clearer water lets light reach the coral, and coral that gets light has a chance of recovering from a bleaching event rather than dying after it.</p>
+      </div>
+      <div class="feature">
+        <h3>Nature and the coastline</h3>
+        <p>A planted mangrove belt holds the bank through monsoon, filters run-off before it reaches the reef, and gives juvenile fish somewhere to grow up. The village behind it loses less land each year.</p>
+      </div>
+      <div class="feature">
+        <h3>Air</h3>
+        <p>Mangroves and coastal vegetation lock away carbon at several times the rate of inland forest per hectare. Waste that gets recycled instead of burned on the beach is smoke that nobody has to breathe.</p>
+      </div>
+      <div class="feature">
+        <h3>Plants and dune systems</h3>
+        <p>Clearing debris lets dune grasses re-root, and rooted dunes stop the sand walking inland. It is unglamorous work with a visible result inside two seasons.</p>
+      </div>
+      <div class="feature">
+        <h3>People</h3>
+        <p>Divers, fishers and resort staff who can point at a specific reef and say what it was like three years ago are the ones who protect it. Most of our volunteers started as guests on a try dive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU CAN DO -->
+<section class="tint-deep">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">What you can do in Dravaka</p>
+      <h2>Five ways in</h2>
+      <p>Pick whichever one fits the time you have.</p>
+    </div>
+    <div class="steps" style="max-width:820px">
+      <div class="step">
+        <div><h3>Book an adventure</h3><p>A try dive, a course, a fun dive, a trek or a camp. Every booking carries a share into the mission fund.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>Join the tribe</h3><p>Membership gets you priority on trips, discounted courses and a standing invitation to every clean-up we run.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>Volunteer</h3><p>Turn up to a clean-up, a planting weekend or a nursery maintenance dive. No membership needed, no experience needed.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>Donate</h3><p>Fund the parts that do not pay for themselves: nursery frames, sapling stock, school sessions, disposal fees.</p></div>
+      </div>
+      <div class="step">
+        <div><h3>Buy from the shop</h3><p>Gear and merchandise we actually use. The margin goes to the same fund as everything else.</p></div>
+      </div>
+    </div>
+    <div class="btn-row mt-3">
+      <a class="btn btn-primary" href="booking.html">Book an adventure</a>
+      <a class="btn btn-ghost" href="join.html">Join the tribe</a>
+      <a class="btn btn-ghost" href="donate.html">Donate</a>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN FORM -->
+<section class="tint-sand">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Welcome to the tribe</p>
+        <h2>Join the tribe</h2>
+        <p class="lede">Leave your details and we will come back with the next intake, the
+          nearest base to you, and the clean-up calendar for the season.</p>
+        <ul class="check">
+          <li>Priority booking on every trip and course</li>
+          <li>Member rates on dives, gear hire and the shop</li>
+          <li>Free entry to every clean-up, planting and nursery dive</li>
+          <li>A log of the work your membership paid for, once a season</li>
+        </ul>
+        <p class="small muted">Prefer to help without joining? <a href="join.html#volunteer">Volunteer instead</a>.</p>
+      </div>
+
+      <form class="form-card" data-demo-form>
+        <div class="form-msg" data-form-msg hidden data-msg-template="Thanks, {name} &mdash; your details are with the tribe desk. We&rsquo;ll be in touch within two working days with your nearest base and the next intake date.">
+          <h3>You&rsquo;re on the list</h3>
+          <p data-msg-body></p>
+        </div>
+        <div class="field">
+          <label for="a-name">Full name <span class="req">*</span></label>
+          <input type="text" id="a-name" name="name" required autocomplete="name">
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="a-phone">Phone <span class="req">*</span></label>
+            <input type="tel" id="a-phone" name="phone" required autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="a-email">Email <span class="req">*</span></label>
+            <input type="email" id="a-email" name="email" required autocomplete="email">
+          </div>
+        </div>
+        <div class="field">
+          <label for="a-state">State / city</label>
+          <input type="text" id="a-state" name="state" autocomplete="address-level1">
+        </div>
+        <div class="field">
+          <label for="a-interest">What are you most interested in?</label>
+          <select id="a-interest" name="interest">
+            <option>Scuba &mdash; try dive or DSD</option>
+            <option>Scuba &mdash; certification course</option>
+            <option>Snorkelling or free diving</option>
+            <option>Trekking and camping</option>
+            <option>Conservation work only</option>
+          </select>
+        </div>
+        <div class="field-check">
+          <input type="checkbox" id="a-consent" name="consent" required>
+          <label for="a-consent" style="font-weight:400">I agree to the <a href="terms.html">terms</a> and <a href="privacy.html">privacy policy</a>. <span class="req">*</span></label>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Join the tribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- footer -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <defs><linearGradient id="fl" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#2ec4b6"/><stop offset=".55" stop-color="#0f7c8a"/><stop offset="1" stop-color="#062733"/>
+            </linearGradient></defs>
+            <circle cx="32" cy="32" r="30" fill="url(#fl)"/>
+            <path d="M6 39q7-6 13 0t13 0 13 0 13 0v7q-6 6-13 0t-13 0-13 0-13 0z" fill="#fff" opacity=".92"/>
+            <path d="M32 12c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15z" fill="#ff6b4a"/>
+          </svg>
+          <span>
+            <span class="brand-name">DRAVAKA</span>
+            <span class="brand-tag">Adventure Club</span>
+          </span>
+        </a>
+        <p>An adventure club that treats the coast as something to look after, not just something to play in. Every trip funds the clean-ups, nurseries and awareness work that keep it worth returning to.</p>
+        <form class="newsletter" data-demo-form data-form-msg-target="#news-signup-msg">
+          <label class="sr-only" for="footer-email">Email address</label>
+          <input type="email" id="footer-email" name="email" placeholder="Your email" required>
+          <button class="btn btn-primary btn-sm" type="submit">Sign up</button>
+        </form>
+        <p class="small" id="news-signup-msg" data-form-msg hidden data-msg-template="You&rsquo;re on the list. Expect tide charts, trip openings and clean-up dates &mdash; nothing else."><span data-msg-body></span></p>
+        <div class="socials">
+          <a href="#" aria-label="Dravaka on Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Dravaka on Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="#" aria-label="Dravaka on WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.7 15L2 22l5.2-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6s.6-1.8.8-2.1c.2-.2.5-.3.6-.3h.5c.2 0 .4-.1.6.4l.8 2c.1.2.1.3 0 .5l-.4.5c-.1.2-.3.3-.1.6.1.3.6 1.1 1.3 1.7.9.8 1.6 1 1.9 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.3-.2.6-.1l1.9.9c.3.1.5.2.5.4z"/></svg></a>
+          <a href="#" aria-label="Dravaka on YouTube"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12s0-3.2-.4-4.7a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.5a2.5 2.5 0 0 0-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.7a2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.5a2.5 2.5 0 0 0 1.8-1.8C22 15.2 22 12 22 12zM10 15V9l5 3z"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Adventure</h4>
+        <ul>
+          <li><a href="adventures.html#trydive">Try Dive &amp; DSD</a></li>
+          <li><a href="adventures.html#courses">Courses</a></li>
+          <li><a href="adventures.html#snorkel">Snorkelling</a></li>
+          <li><a href="adventures.html#freedive">Free diving</a></li>
+          <li><a href="adventures.html#locations">Dive locations</a></li>
+          <li><a href="booking.html">Book now</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>The Tribe</h4>
+        <ul>
+          <li><a href="join.html">Join the Tribe</a></li>
+          <li><a href="join.html#volunteer">Become a volunteer</a></li>
+          <li><a href="missions.html">Our missions</a></li>
+          <li><a href="impact.html">Our impact</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="help.html">Help centre &amp; FAQ</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="terms.html">Terms &amp; conditions</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="refund.html">Refund &amp; return policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="mb-0">&copy; <span data-year>2026</span> Dravaka Adventure Club. Let&rsquo;s do it together.</p>
+      <nav aria-label="Legal">
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="refund.html">Refunds</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
